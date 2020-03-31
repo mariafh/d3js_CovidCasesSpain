@@ -52,27 +52,27 @@ const modifyMap = (data: ResultEntry[]) => {
     return  item ? colors(item.value) : colors(0);
   }
 
-svg
-  .selectAll("path")
-  .data(geojson["features"])
-  .enter()
-  .append("path")
-  .attr("class", "country")
-  .style("fill", (d) => getColorByAffectedCases(d["properties"]["NAME_1"]))
-  .attr("d", geoPath as any)
-  .merge(svg.selectAll("path") as any)
-  .transition()
-  .duration(400)
-  .attr("d", geoPath as any)
-  .style("fill", (d) => getColorByAffectedCases(d["properties"]["NAME_1"]));
-    
+  svg
+    .selectAll("path")
+    .data(geojson["features"])
+    .enter()
+    .append("path")
+    .attr("class", "country")
+    .style("fill", (d) => getColorByAffectedCases(d["properties"]["NAME_1"]))
+    .attr("d", geoPath as any)
+    .merge(svg.selectAll("path") as any)
+    .transition()
+    .duration(400)
+    .attr("d", geoPath as any)
+    .style("fill", (d) => getColorByAffectedCases(d["properties"]["NAME_1"]));
+      
   const circles = svg.selectAll("circle")
   circles
     .data(latLongCommunities)
     .enter()
     .append("circle")
     .attr("class", "affected-marker")
-    .attr("r", function(d) {
+    .style("r", function(d) {
       return calculateRadiusBasedOnAffectedCases(d.name)
     })
     .attr("cx", d => aProjection([d.long, d.lat])[0])
@@ -80,7 +80,7 @@ svg
     .merge(circles as any)  
     .transition()
     .duration(400)
-    .attr("r", function(d) {
+    .style("r", function(d) {
       return calculateRadiusBasedOnAffectedCases(d.name)
     });    
 };

@@ -6,7 +6,7 @@ export interface ResultEntry {
 
 export const latLongCommunities: ResultEntry[] = [
   {
-    name: "Madrid",
+    name: "Comunidad de Madrid",
     long: -3.70256,
     lat: 40.4165
   },
@@ -16,12 +16,12 @@ export const latLongCommunities: ResultEntry[] = [
     lat: 37.6
   },
   {
-    name: "Valencia",
+    name: "Comunidad Valenciana",
     long: -0.37739,
     lat: 39.45975
   },
   {
-    name: "Murcia",
+    name: "Región de Murcia",
     long: -1.13004,
     lat: 37.98704
   },
@@ -66,7 +66,7 @@ export const latLongCommunities: ResultEntry[] = [
     lat: 41.383333
   },
   {
-    name: "Castilla La Mancha",
+    name: "Castilla-La Mancha",
     long: -3.000033,
     lat: 39.500011
   },
@@ -77,8 +77,8 @@ export const latLongCommunities: ResultEntry[] = [
   },
   {
     name: "Islas Baleares",
-    long: 2.95136,
-    lat: 39.54000
+    long: 2.52136,
+    lat: 39.18969
   },
   {
     name: "La Rioja",
@@ -86,7 +86,7 @@ export const latLongCommunities: ResultEntry[] = [
     lat: 42.4650
   },
   {
-    name: "Navarra",
+    name: "Comunidad Foral de Navarra",
     long: -1.676069,
     lat: 42.695391
   }

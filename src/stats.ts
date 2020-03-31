@@ -5,7 +5,7 @@ export interface ResultEntry {
 
 export const initial_stats : ResultEntry[] =[
   {
-    name: "Madrid",
+    name: "Comunidad de Madrid",
     value: 587
   },
   {
@@ -21,11 +21,11 @@ export const initial_stats : ResultEntry[] =[
     value: 101
   },
   {
-    name: "Valencia",
+    name: "Comunidad Valenciana",
     value: 50
   },
   {
-    name: "Murcia",
+    name: "Región de Murcia",
     value: 5
   },
   {
@@ -33,7 +33,7 @@ export const initial_stats : ResultEntry[] =[
     value: 7
   },
   {
-    name: "Castilla La Mancha",
+    name: "Castilla-La Mancha",
     value: 26
   },
   {
@@ -69,14 +69,14 @@ export const initial_stats : ResultEntry[] =[
     value: 11
   },
   {
-    name: "Navarra",
+    name: "Comunidad Foral de Navarra",
     value: 13
   }
 ];
 
 export const final_stats : ResultEntry[] =[
   {
-    name: "Madrid",
+    name: "Comunidad de Madrid",
     value: 12352
   },
   {
@@ -92,11 +92,11 @@ export const final_stats : ResultEntry[] =[
     value: 7864
   },
   {
-    name: "Valencia",
+    name: "Comunidad Valenciana",
     value: 2167
   },
   {
-    name: "Murcia",
+    name: "Región de Murcia",
     value: 385
   },
   {
@@ -104,7 +104,7 @@ export const final_stats : ResultEntry[] =[
     value: 636
   },
   {
-    name: "Castilla La Mancha",
+    name: "Castilla-La Mancha",
     value: 2465
   },
   {
@@ -140,7 +140,7 @@ export const final_stats : ResultEntry[] =[
     value: 478
   },
   {
-    name: "Navarra",
+    name: "Comunidad Foral de Navarra",
     value: 1014
   }
 ];
